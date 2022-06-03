@@ -19,5 +19,14 @@ public class Main {
         System.out.println("multiply = " + calculator.getMultiplicationResult());
         System.out.println("divide = " + calculator.getDivisionResult());
 
+        // Bank account challenge
+        BankAcc accOne = new BankAcc(123, 50000, "Ruth");
+        System.out.println(accOne.getCustomerName() + ", you have €" + accOne.getBalance() + " in your account");
+        accOne.deposit(50000);
+        accOne.withdraw(900000);
+        accOne.withdraw(9000);
+        BankAcc accTwo = new BankAcc("Lucy");
+        System.out.println(accTwo.getCustomerName() + ", you have €" + accTwo.getBalance() + " in your account");
+
     }
 }
